@@ -1,0 +1,429 @@
+.base {
+    display: inline-block;
+    margin: 20% 38%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    width: 90px;
+    height: 60px;
+    background: white;
+    transform: scale(2.2);
+}
+
+.base:hover {
+    transition: all ease-in 0.2s;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    transform: scale(2.5);
+}
+
+/* France */
+
+.c1 .main {
+    background: white;
+    width: 30px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.c1 .main::before {
+    background: #0202ba;
+    width:30px;
+    height: 60px;
+    margin-left: -30px;
+}
+
+.c1 .main::after {
+    background: #ef0404;
+    width: 30px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+
+.c6 .main, .c8 .main {
+    width: 90px;
+    height: 20px;
+    background: orange;
+}
+
+.c6 .main:before, .c8 .main:before {
+    width: 90px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.c6 .main:after, .c8 .main:after {
+    width: 90px;
+    height: 20px;
+    margin-top: 40px;
+    background: green;
+}
+
+
+.c4 .main,.c5 .main,.c9 .main, .c11 .main, .c13 .main, .c18 .main, .c19 .main {
+    width: 90px;
+    height: 60px;
+    background: #0202ba;
+    overflow: hidden;
+}
+
+
+/* Japan */
+
+.c4 .main {
+    background: white;
+}
+
+.c4 .main:after {
+    width : 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    margin: 15px 30px;
+}
+
+/* Switzerland */
+
+.c5 .main {
+    background: #ef0404;
+}
+
+.c5 .main:before {
+    width: 12px;
+    height: 36px;
+    margin: 12px 39px;
+    background: white; 
+}
+
+.c5 .main:after {
+    width: 36px;
+    height: 12px;
+    margin: 24px 27px;
+    background: white; 
+}
+
+/* Germany */
+
+.c6 .main {
+    background: black;
+}
+
+.c6 .main::before {
+    background: #ef0404;
+}
+
+.c6 .main::after {
+    background: yellow;
+}
+
+
+/* Spain */
+
+.c8 .main, .c8 .main:after {
+    background: #ef0404;
+    height: 15px;
+}
+
+.c8 .main:before {
+    background: yellow;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.c8 .main:after {
+    margin-top: 45px;
+}
+
+/* Brazil */
+
+.c9 .main {
+    background: green;
+}
+
+.c9 .main:before {
+    background: yellow;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg) skew(-15deg,-15deg);
+    margin: 10px 25px;
+}
+
+.c9 .main .circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #0c0c9b;
+    margin: 16px 31px;
+    overflow: hidden;
+}
+
+.c9 .main .circle:after {
+    left: -20px;
+    top: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Sweden */
+
+.c11 .main {
+    background: #2f54bd;
+    overflow: hidden;
+}
+
+.c11 .main:before, .c11 .main:after {
+    width: 90px;
+    height: 12px;
+    background: yellow;
+    margin: 24px 0px;
+}
+
+.c11 .main:after {
+    transform: rotate(90deg);
+    margin-left: -13px;
+}
+
+/* South Africa */
+
+.c12 .main {
+    overflow: hidden;
+}
+
+.c12 .main,.c12 .main:before {
+    width: 90px;
+    height: 60px;
+    background: red;
+}
+
+.c12 .main:before {
+    margin: 30px 0px;
+    background: blue;
+}
+
+.c12 .main .p1:before, .c12 .main .p1:after, .c12 .main .p2:before, .c12 .main .p2:after {
+    background: white;
+    width: 70px;
+    height: 70px;
+    margin: -5px -35px;
+    transform: rotate(45deg) skew(-10deg, -10deg);
+}
+
+.c12 .main .p1:before, .c12 .main .p2:after {
+    width: 90px;
+    height: 18px;
+    margin: 21px 0px;
+    transform: rotate(0deg);
+}
+
+.c12 .main .p2:before {
+    margin: -5px -42px;
+    background: green;
+}
+
+.c12 .main .p2:after {
+    height: 10px;
+    background: green;
+    margin: 25px 0px;
+}
+
+.c12 .main:after {
+    background: black;
+    width: 70px;
+    height: 70px;
+    transform: rotate(45deg) skew(-10deg, -10deg);
+    margin: -8px -70px;
+    border: 4px solid yellow;
+}
+
+/* Greenland */
+
+.c15 .main {
+    background: red;
+    width: 90px;
+    height: 30px;
+    margin: 30px 0px;
+}
+
+.c15 .main:before, .c15 .main:after {
+    background: red;
+    width: 30px;
+    height: 15px;
+    border-radius: 50px 50px 0px 0px;
+    margin: -15px 15px;
+}
+
+.c15 .main:after {
+    background: white;
+    transform: rotate(180deg);
+    margin: 0px 15px;
+}
+
+/* Israel */
+
+.c16 .main:before, .c16 .main:after {
+    background: #8888ff;
+    width: 90px;
+    height: 6px;
+    margin-top: 5px;
+}
+
+.c16 .main:after {
+    margin-top: 48px;
+}
+
+.c16 .main .t1, .c16 .main .t1:after, .c16 .main .t1:before, .c16 .main .t2, .c16 .main .t2:after, .c16 .main .t2:before {
+    width: 20px;
+    height: 1.5px;
+    border-radius: 2px 2px 0px 0px;
+    background: #8888ff;
+    transform: scale(1.5);
+}
+.c16 .main .t1 {
+    margin: 22px 33px;
+    border-radius: 0px 0px 2px 2px;
+}
+
+.c16 .main .t2 {
+    margin: 37px 33px;
+    border-radius: 0px 0px 2px 2px;
+    transform: rotate(180deg) scale(1.5);
+}
+
+.c16 .main .t1:after,.c16 .main .t2:after {
+    transform-origin: left;
+    width: 19px;
+    transform: rotate(56deg);
+    margin: -1px 0px;
+}
+
+.c16 .main .t1:before, .c16 .main .t2:before {
+    transform-origin: right;
+    margin: -1px 2px;
+    width: 18px;
+    transform: rotate(-56deg);
+}
+
+/* Vietnam */
+
+.c17 .main {
+    background: #d00;
+    width: 90px;
+    height: 60px;
+}
+
+.s,.s:before,.s:after {
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 12px solid yellow;
+}
+
+.s {
+    margin: 25px 25px;
+    transform: scale(0.8);
+}
+
+.s:before {
+    transform: rotate(73deg);
+    margin: -12px -20px;
+}
+
+.s:after {
+    transform: rotate(-73deg);
+    margin: -12px -20px;
+}
+
+/* Algeria */
+
+.c18 .main {
+    background: green;
+}
+
+.c18 .main:before {
+    width: 45px;
+    height: 60px;
+    background: white;
+    margin-left: 45px;
+}
+
+.c18 .main .s {
+    transform: scale(0.4) rotate(20deg);
+    margin-left: 33px;
+    border-top-color: red;
+}
+
+.c18 .main .s:before,.c18 .main .s:after {
+    border-top-color: red;
+}
+
+.m {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-left: 4px solid red;
+    border-bottom: 4px solid red;
+    margin: 15px 30px;
+    transform: rotate(40deg);
+}
+
+/* China */
+
+.c19 .main {
+    background: red;
+}
+
+.c19 .main .s {
+    transform: scale(0.15) rotate(20deg);
+    margin: -1px 9px;
+}
+.c19 .main .s:nth-child(1) {
+    transform: scale(0.45);
+    margin: 10px -5px;
+}
+.c19 .main .s:nth-child(2) {
+    margin: 7px 15px;
+}
+.c19 .main .s:nth-child(3) {
+    margin: 15px 15px;
+}
+.c19 .main .s:nth-child(4) {
+    margin: 23px 9px;
+}
+
+
+/* body */
+
+html, body {
+    background: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+div, div:after, div:before {
+    
+    position: absolute;
+    content: '';
+}
+
+.cont1{
+    margin-left: 200px;
+}
+.cont2{
+    margin-left: 600px;
+}
+.cont3{
+    margin-left: 1000px;
+}
