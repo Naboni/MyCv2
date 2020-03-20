@@ -161,11 +161,16 @@ input[type=submit]:hover {
 }
 #pictures{
     margin: 1.6%;
+    overflow: hidden;
 }
 #pictures img{
     transition: 1s;
     padding: 15px;
     width: 30%;
+    margin: 1.66% 1.66%;
+    font-family: cursive;
+    font-size: large;
+    float: right;
 }
 #pictures img:hover {
     filter: grayscale(100%);
