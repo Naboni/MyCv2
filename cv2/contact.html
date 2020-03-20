@@ -1,58 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naboni / Contact</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <style>
-/* 
-        body{
-            background-image: url("https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-            background-repeat: no-repeat;
-            background-size: cover;
-        } */
-        img{
-    float: left;
-    border-radius: 100%;
-    border-style: hidden;
-    width: 250px;
-    height: 250px;
-    margin: 0px 15px 0px 3px;
-}
-#clear{
-    clear: left;
+    <link rel="shortcut icon" href="./assets/images/275.ico" type="image/x-icon">
+    <title>Naboni Abebe</title>
 
+    <style>
+        body {
+            background-image: url();
+            background-size: cover;
+        }
     </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <img src="/assets/images/profile.jpg" alt="profile picture">
-    <p>Naboni A.</p>
-    <p>My name is Naboni Abebe and i am a student at Addis Ababa University. I am a Software Engineering 2nd year student.<br> I like watching sports and playing games. My favorite sport is football and my favorite game is Rainbow six siege.<br>
-        Most of the time I use my computer for developing apps and websites.<br> <br> I am 19 years old and I am from Adama, Ethiopia. As a young developer I got a lot to learn so i could be more qualified and advanced developer.
-         There is a lot to learn these days beacause of the rapid growth of the technology.</p>
-    <div id="clear">
-        <p>&nbsp;</p>
-        <p>I dont want this to float</p>
-    </div>
+<body>
+
+
+    <hr>
+    <a href="index.html">Home</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="blog.html">Blog</a>
+    <a href="mywork.html">My Work</a>
+
+    <hr>
+    <!-- this is the first step... -->
+
+    <table cellspacing="50">
+            <tr>
+                <!-- add image... -->
     
-    <!-- <div id="clear">
-        <img src="https://images.pexels.com/photos/364096/pexels-photo-364096.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="house on shore">
-    </div> -->
-    
+                <td> <img src="./assets/images/profile.jpg" alt="profile picture">
+                </td>
+                <td>
+                    <h1>Naboni Abebe</h1>
+                    <h3>Student</h3>
+                    <p>My name is Naboni Abebe and i am a student at Addis Ababa University. I am a Software Engineering 2nd year student.<br> I like watching sports and playing games. My favorite sport is football and my favorite game is Rainbow six siege.<br>
+                    Most of the time I use my computer for developing apps and websites.<br> <br> I am 19 years old and I am from Adama, Ethiopia. As a young developer I got a lot to learn so i could be more qualified and advanced developer.
+                     There is a lot to learn these days beacause of the rapid growth of the technology. 
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+    <!-- contac form...block -->
+    <h3>leave comment here</h3>
+
+    <table cellspacing='15'>
+        <tr>
+            <td>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=addis%20ababa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://www.embedgooglemap.org"></a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    </style>
+                </div>
+            </td>
+            <td>
+                <table>
+
+                    <form action="" enctype="UTF-8">
+
+                        <tr>
+                            <td>
+                                <label for="fname">First Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="fname" pattern="[A-Za-z]{4,10}" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="lname">Last Name:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="lname" pattern="[A-Za-z]{4,10}" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email">Email:</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="phone">Phone Number:</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="phone" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="password" pattern=".{8,16}" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="country">Country</label>
+                            </td>
+                            <td>
+                                <select id="country">
+                                    <option value="af">Africa</option>
+                                    <option value="am">America</option>
+                                    <option value="eu">Europe</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="comment">Leave Your Comment Here:</label>
+                            </td>
+                            <td>
+                                <textarea id="comment" cols="30" rows="10" required></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="submit" value="Submit">
+                            </td>
+                        </tr>
+
+                    </form>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <a href="#" target="_blank">twitter</a> |
+    <a href="#" target="_blank">facebook </a>
+    <hr>
+
+    <hr>
+    <p align="center">made by Naboni Abebe. &copy; 2020</p>
+    <hr>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 /* Element [Tag] */
 body{
-    background-color: skyblue;
+    /* background-color: skyblue; */
     /* border: 10px lightgrey solid; */
     margin: 10px;
 }
@@ -53,10 +53,46 @@ nav > ul > li > a:hover{
 nav > ul > li > a:active{
     background-color: yellow;
 }
-
-table{
-    
+#desc_pro{
+    height: 300px;
+    border-bottom: 5px solid black;
 }
+
+#profile{
+    width: 250px;
+    height: 250px;
+}
+
+#pro_image{
+    float:left;
+    width:25%; 
+}
+#description{
+    float: right;
+    width: 75%;
+}
+
+#hobbies, #skills{
+    border-bottom: 5px solid black;
+}
+#copyright{
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+.table{
+    display: block;
+    margin: 10px;
+}
+.row{
+    display: block;
+}
+.cell{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
 #forg{
     text-align: center;
     text-transform: uppercase;
