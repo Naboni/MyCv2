@@ -20,3 +20,20 @@
     filter: grayscale(100%);
     transform: scale(1.1);
 }
+
+@media screen and (max-width:768px){
+    #forg{
+        font-size: 17px;
+    }
+
+    #pictures{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #pictures img{
+        width: 100%;
+    }
+}

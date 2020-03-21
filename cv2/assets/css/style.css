@@ -166,3 +166,41 @@ input[type=submit]:hover {
 }
 
 
+
+@media screen and (max-width: 768px) {
+    .topnav a {
+        font-size: 10px;
+    }
+
+    #copyright {
+        font-size: 10px;
+    }
+
+    #profile{
+        width: 95%;
+        height: auto;
+        
+    }
+
+    body{
+        font-size: 14px;
+    }
+
+    #desc_pro{
+        height: 360px;
+    }
+     h1{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .mapouter{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    
+}
+
